@@ -27,11 +27,11 @@ Think carefully, find the best move, and free every arrow.
 
 For questions, feedback, or support, please contact us:
 
-**Email:** your-support-email@example.com
+**Email:** silentgamesmaster@gmail.com
 
 문의, 피드백, 지원이 필요한 경우 아래 이메일로 연락해 주세요.
 
-**이메일:** your-support-email@example.com
+**이메일:** silentgamesmaster@gmail.com
 
 ---
 
@@ -50,8 +50,8 @@ You can read our Privacy Policy here:
 ## Developer Information
 
 **Developer:** Silent Games  
-**Website:** https://your-github-pages-url.github.io/  
-**Contact:** your-support-email@example.com
+**Website:** [https://your-github-pages-url.github.io/  ](https://github.com/trauma44/silentgames-policy/)
+**Contact:** silentgamesmaster@gmail.com
 
 ---
 
