@@ -50,7 +50,7 @@ You can read our Privacy Policy here:
 ## Developer Information
 
 **Developer:** Silent Games  
-**Website:** [https://your-github-pages-url.github.io/  ](https://github.com/trauma44/silentgames-policy/)
+**Website:** [[https://your-github-pages-url.github.io/](https://github.com/trauma44/silentgames-policy/)  ](https://github.com/trauma44/silentgames-policy/)
 **Contact:** silentgamesmaster@gmail.com
 
 ---
