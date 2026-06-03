@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>OUTARROW — Links</title>
+<meta name="description" content="OUTARROW — 미니멀 화살표 논리 퍼즐. 1,000+ 단계. 곧 출시!">
+<meta property="og:title" content="OUTARROW — 미니멀 화살표 논리 퍼즐">
+<meta property="og:description" content="화살표를 밀어 보드를 탈출시키는 1,000+ 단계 퍼즐. 곧 출시!">
+<meta property="og:image" content="icon.png">
+<style>
+  :root{
+    --green:#15803A; --gold:#EAB750; --ink:#1A1A1A;
+    --bg:#EEF0F4; --card:#FFFFFF; --muted:#6B7280; --line:#E5E7EB;
+  }
+  *{box-sizing:border-box;margin:0;padding:0;-webkit-tap-highlight-color:transparent}
+  html,body{height:100%}
+  body{
+    font-family:'Segoe UI',-apple-system,BlinkMacSystemFont,'Malgun Gothic',sans-serif;
+    background:linear-gradient(180deg,#F3F5F9 0%,#E7EAF1 100%);
+    color:var(--ink);min-height:100%;
+    display:flex;align-items:center;justify-content:center;padding:32px 18px;
+  }
+  .wrap{width:100%;max-width:420px;text-align:center}
+  .icon{
+    width:104px;height:104px;border-radius:24px;display:block;margin:0 auto 16px;
+    box-shadow:0 8px 24px rgba(20,30,50,.14);
+  }
+  .brand{font-size:30px;font-weight:800;letter-spacing:.5px}
+  .brand .w{color:var(--green)}
+  .tag{color:var(--muted);font-size:15px;margin-top:6px;line-height:1.5}
+  .badge{
+    display:inline-block;margin:18px 0 22px;padding:7px 16px;border-radius:999px;
+    background:var(--gold);color:#3A2D06;font-weight:700;font-size:14px;
+  }
+  .btn{
+    display:flex;align-items:center;justify-content:center;gap:10px;
+    width:100%;padding:17px 18px;margin:11px 0;border-radius:16px;
+    font-size:17px;font-weight:700;text-decoration:none;border:1px solid transparent;
+    transition:transform .08s ease, box-shadow .2s ease;
+  }
+  .btn:active{transform:scale(.985)}
+  .btn-store{
+    background:var(--card);color:#9AA1AC;border-color:var(--line);
+    cursor:default;position:relative;
+  }
+  .btn-store .soon{
+    position:absolute;right:14px;top:50%;transform:translateY(-50%);
+    font-size:11px;font-weight:700;color:#fff;background:#9AA1AC;
+    padding:3px 8px;border-radius:999px;
+  }
+  .btn-notify{
+    background:var(--green);color:#fff;
+    box-shadow:0 6px 18px rgba(21,128,57,.32);
+  }
+  .btn-notify:hover{box-shadow:0 8px 22px rgba(21,128,57,.4)}
+  .links{margin-top:26px;font-size:13px;color:var(--muted)}
+  .links a{color:var(--muted);text-decoration:none;margin:0 8px}
+  .links a:hover{color:var(--ink);text-decoration:underline}
+  .foot{margin-top:14px;font-size:12px;color:#9AA1AC}
+  .lang{
+    position:fixed;top:14px;right:14px;display:flex;gap:4px;
+    background:rgba(255,255,255,.7);border:1px solid var(--line);
+    border-radius:999px;padding:3px;backdrop-filter:blur(6px);
+  }
+  .lang button{
+    border:none;background:none;font-size:13px;font-weight:700;color:var(--muted);
+    padding:5px 11px;border-radius:999px;cursor:pointer
+  }
+  .lang button.on{background:var(--green);color:#fff}
+  [data-en]{display:none}
+  body.en [data-ko]{display:none}
+  body.en [data-en]{display:revert}
+</style>
+</head>
+<body>
+  <div class="lang">
+    <button id="b-ko" class="on" onclick="setLang('ko')">KO</button>
+    <button id="b-en" onclick="setLang('en')">EN</button>
+  </div>
+
+  <div class="wrap">
+    <img class="icon" src="icon.png" alt="OUTARROW">
+    <div class="brand">OUTARRO<span class="w">W</span></div>
+
+    <p class="tag" data-ko>미니멀 화살표 논리 퍼즐 🧩<br>화살표를 밀어 보드를 탈출시키세요 · 1,000+ 단계</p>
+    <p class="tag" data-en>Minimalist arrow logic puzzle 🧩<br>Slide arrows to clear the board · 1,000+ levels</p>
+
+    <span class="badge" data-ko>🚧 곧 출시</span>
+    <span class="badge" data-en>🚧 Coming Soon</span>
+
+    <!-- 출시 후: href를 실제 스토어 URL로 바꾸고 class에서 btn-store 유지, .soon 배지 삭제 -->
+    <a class="btn btn-store">
+      <span>▶ Google Play</span>
+      <span class="soon" data-ko>곧 출시</span><span class="soon" data-en>Soon</span>
+    </a>
+    <a class="btn btn-store">
+      <span> App Store</span>
+      <span class="soon" data-ko>곧 출시</span><span class="soon" data-en>Soon</span>
+    </a>
+
+    <a class="btn btn-notify" data-ko
+       href="mailto:silentgamesmaster@gmail.com?subject=Outarrow%20출시%20알림%20신청&body=출시되면%20알려주세요!">
+       📩 출시 알림 받기
+    </a>
+    <a class="btn btn-notify" data-en
+       href="mailto:silentgamesmaster@gmail.com?subject=Outarrow%20Launch%20Notify&body=Please%20notify%20me%20at%20launch!">
+       📩 Notify me at launch
+    </a>
+
+    <div class="links">
+      <a href="privacy-policy.html" data-ko>개인정보처리방침</a><a href="privacy-policy.html" data-en>Privacy</a>
+      ·
+      <a href="support.html" data-ko>고객지원</a><a href="support.html" data-en>Support</a>
+    </div>
+    <div class="foot">© 2026 Silent Games</div>
+  </div>
+
+<script>
+  function setLang(l){
+    document.body.classList.toggle('en', l==='en');
+    document.documentElement.lang = l;
+    document.getElementById('b-ko').classList.toggle('on', l==='ko');
+    document.getElementById('b-en').classList.toggle('on', l==='en');
+  }
+  // 브라우저 언어가 한국어가 아니면 영어로 시작
+  if(!(navigator.language||'').toLowerCase().startsWith('ko')) setLang('en');
+</script>
+</body>
+</html>
