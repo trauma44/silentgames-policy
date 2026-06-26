@@ -4,9 +4,9 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>OUTARROW — Links</title>
-<meta name="description" content="OUTARROW — 미니멀 화살표 논리 퍼즐. 1,000+ 단계. 곧 출시!">
+<meta name="description" content="OUTARROW — 미니멀 화살표 논리 퍼즐. 1,000+ 단계. 안드로이드 출시!">
 <meta property="og:title" content="OUTARROW — 미니멀 화살표 논리 퍼즐">
-<meta property="og:description" content="화살표를 밀어 보드를 탈출시키는 1,000+ 단계 퍼즐. 곧 출시!">
+<meta property="og:description" content="화살표를 밀어 보드를 탈출시키는 1,000+ 단계 퍼즐. 지금 안드로이드에서 만나보세요!">
 <meta property="og:image" content="icon.png">
 <style>
   :root{
@@ -40,20 +40,11 @@
     transition:transform .08s ease, box-shadow .2s ease;
   }
   .btn:active{transform:scale(.985)}
-  .btn-store{
-    background:var(--card);color:#9AA1AC;border-color:var(--line);
-    cursor:default;position:relative;
-  }
-  .btn-store .soon{
-    position:absolute;right:14px;top:50%;transform:translateY(-50%);
-    font-size:11px;font-weight:700;color:#fff;background:#9AA1AC;
-    padding:3px 8px;border-radius:999px;
-  }
-  .btn-notify{
+  .btn-play{
     background:var(--green);color:#fff;
     box-shadow:0 6px 18px rgba(21,128,57,.32);
   }
-  .btn-notify:hover{box-shadow:0 8px 22px rgba(21,128,57,.4)}
+  .btn-play:hover{box-shadow:0 8px 22px rgba(21,128,57,.4)}
   .links{margin-top:26px;font-size:13px;color:var(--muted)}
   .links a{color:var(--muted);text-decoration:none;margin:0 8px}
   .links a:hover{color:var(--ink);text-decoration:underline}
@@ -86,26 +77,13 @@
     <p class="tag" data-ko>미니멀 화살표 논리 퍼즐 🧩<br>화살표를 밀어 보드를 탈출시키세요 · 1,000+ 단계</p>
     <p class="tag" data-en>Minimalist arrow logic puzzle 🧩<br>Slide arrows to clear the board · 1,000+ levels</p>
 
-    <span class="badge" data-ko>🚧 곧 출시</span>
-    <span class="badge" data-en>🚧 Coming Soon</span>
+    <span class="badge" data-ko>🎉 안드로이드 출시</span>
+    <span class="badge" data-en>🎉 Out now on Android</span>
 
-    <!-- 출시 후: href를 실제 스토어 URL로 바꾸고 class에서 btn-store 유지, .soon 배지 삭제 -->
-    <a class="btn btn-store">
-      <span>▶ Google Play</span>
-      <span class="soon" data-ko>곧 출시</span><span class="soon" data-en>Soon</span>
-    </a>
-    <a class="btn btn-store">
-      <span> App Store</span>
-      <span class="soon" data-ko>곧 출시</span><span class="soon" data-en>Soon</span>
-    </a>
-
-    <a class="btn btn-notify" data-ko
-       href="mailto:silentgamesmaster@gmail.com?subject=Outarrow%20출시%20알림%20신청&body=출시되면%20알려주세요!">
-       📩 출시 알림 받기
-    </a>
-    <a class="btn btn-notify" data-en
-       href="mailto:silentgamesmaster@gmail.com?subject=Outarrow%20Launch%20Notify&body=Please%20notify%20me%20at%20launch!">
-       📩 Notify me at launch
+    <!-- href의 referrer(UTM)는 ?s=ig|tt|yt, ?l=ko|en 파라미터에 따라 아래 스크립트가 동적으로 붙임 -->
+    <a id="playBtn" class="btn btn-play" target="_blank" rel="noopener"
+       href="https://play.google.com/store/apps/details?id=com.silentgames.arrowescapepuzzle">
+      <span data-ko>▶ Google Play에서 받기</span><span data-en>▶ Get it on Google Play</span>
     </a>
 
     <div class="links">
@@ -125,6 +103,18 @@
   }
   // 브라우저 언어가 한국어가 아니면 영어로 시작
   if(!(navigator.language||'').toLowerCase().startsWith('ko')) setLang('en');
+
+  // 유입 소스별 Play 설치 referrer(UTM) 동적 부착
+  // 권장 bio URL 예: links.html?s=ig&l=ko (인스타·한국), links.html?s=tt&l=en (틱톡·영어)
+  (function(){
+    var p = new URLSearchParams(location.search);
+    var map = {ig:['instagram','reels'], tt:['tiktok','shorts'], yt:['youtube','shorts'], bio:['bio','profile']};
+    var m = map[(p.get('s')||'bio').toLowerCase()] || map.bio;
+    var lang = (p.get('l')||document.documentElement.lang||'').toLowerCase()==='ko' ? 'ko' : 'en';
+    var ref = encodeURIComponent('utm_source='+m[0]+'&utm_medium='+m[1]+'&utm_campaign=organic_'+lang);
+    var btn = document.getElementById('playBtn');
+    btn.href = btn.href + '&referrer=' + ref;
+  })();
 </script>
 </body>
 </html>
