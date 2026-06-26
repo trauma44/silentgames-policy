@@ -59,9 +59,8 @@
     padding:5px 11px;border-radius:999px;cursor:pointer
   }
   .lang button.on{background:var(--green);color:#fff}
-  [data-en]{display:none}
+  body:not(.en) [data-en]{display:none}
   body.en [data-ko]{display:none}
-  body.en [data-en]{display:revert}
 </style>
 </head>
 <body>
