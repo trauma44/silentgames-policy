@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ko">
+<html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -63,10 +63,10 @@
   body.en [data-ko]{display:none}
 </style>
 </head>
-<body>
+<body class="en">
   <div class="lang">
-    <button id="b-ko" class="on" onclick="setLang('ko')">KO</button>
-    <button id="b-en" onclick="setLang('en')">EN</button>
+    <button id="b-ko" onclick="setLang('ko')">KO</button>
+    <button id="b-en" class="on" onclick="setLang('en')">EN</button>
   </div>
 
   <div class="wrap">
@@ -100,8 +100,8 @@
     document.getElementById('b-ko').classList.toggle('on', l==='ko');
     document.getElementById('b-en').classList.toggle('on', l==='en');
   }
-  // 브라우저 언어가 한국어가 아니면 영어로 시작
-  if(!(navigator.language||'').toLowerCase().startsWith('ko')) setLang('en');
+  // 기본은 영어. ?l=ko 로 들어오면(한국 계정 링크) 한국어로 시작
+  setLang((new URLSearchParams(location.search).get('l')||'').toLowerCase()==='ko' ? 'ko' : 'en');
 
   // 유입 소스별 Play 설치 referrer(UTM) 동적 부착
   // 권장 bio URL 예: links.html?s=ig&l=ko (인스타·한국), links.html?s=tt&l=en (틱톡·영어)
