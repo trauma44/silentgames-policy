@@ -8,6 +8,20 @@ Silent Games는 간단한 조작, 직관적인 규칙, 그리고 만족스러운
 
 ## Games
 
+### Block Bloom
+
+**Block Bloom** is a cozy 8×8 block puzzle where one move can set off bomb chains and full-board laser wipes.
+
+Drag and drop blocks, clear lines, and trigger satisfying special-block chain reactions. No tutorial, no Wi-Fi needed.
+
+**Block Bloom**은 한 수로 폭탄 연쇄와 전체 클리어 레이저가 터지는 아늑한 8×8 블록 퍼즐입니다.
+
+블록을 끌어다 놓아 줄을 지우고, 특수 블록의 시원한 연쇄 반응을 터뜨리세요. 튜토리얼도, 와이파이도 필요 없습니다.
+
+*Coming soon on Android.*
+
+---
+
 ### Outarrow: Escape Puzzle
 
 **Outarrow** is a simple but tricky arrow escape puzzle game.
