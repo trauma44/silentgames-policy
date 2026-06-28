@@ -18,7 +18,7 @@ Drag and drop blocks, clear lines, and trigger satisfying special-block chain re
 
 블록을 끌어다 놓아 줄을 지우고, 특수 블록의 시원한 연쇄 반응을 터뜨리세요. 튜토리얼도, 와이파이도 필요 없습니다.
 
-*Coming soon on Android.*
+*Out now on Google Play.*
 
 ---
 
