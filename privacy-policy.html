@@ -121,7 +121,7 @@
 <div id="en">
 
 <h1>Privacy Policy</h1>
-<p class="subtitle">Effective Date: May 23, 2026 &nbsp;|&nbsp; Last Updated: May 23, 2026</p>
+<p class="subtitle">Effective Date: May 23, 2026 &nbsp;|&nbsp; Last Updated: September 1, 2026</p>
 
 <p>SilentGames ("we", "us", or "our") develops and publishes mobile games, applications, websites, and related services (collectively, the "Services"). This Privacy Policy explains what information our Services may collect, how it is used, and what choices you have.</p>
 
@@ -144,13 +144,17 @@
 <p>For more information, see <a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener">Firebase Privacy</a>.</p>
 
 <h3>1.2 Advertising Data</h3>
-<p>Our games may use <strong>Google AdMob</strong> to display ads (rewarded ads and interstitial ads). AdMob and its partners may collect:</p>
+<p><strong>Ad formats differ by game.</strong> Some of our games show only rewarded video ads &mdash; ads you choose to watch in exchange for something in the game &mdash; and never show interstitial or banner ads. Other games may also show interstitial ads. The store listing for each game states which formats that game uses.</p>
+<p>To serve ads we use ad mediation, which means a single SDK requests ads from several advertising networks and shows whichever one is available. Depending on the game, that mediation SDK is <strong>Google AdMob</strong> or <strong>ironSource LevelPlay</strong> (also called Unity LevelPlay). When LevelPlay is used it may request ads from partner networks including Google AdMob and Unity Ads.</p>
+<p>These advertising networks may collect, and we <strong>share with them</strong>, the following:</p>
 <ul>
     <li>Advertising ID (Google Advertising ID on Android)</li>
     <li>IP address (used to estimate approximate location at city or coarser level)</li>
     <li>Device information (model, OS version, screen size)</li>
     <li>Ad interaction data (views, clicks)</li>
+    <li>Coarse network and device signals, such as connection type and country</li>
 </ul>
+<p><strong>Interest signals (Privacy Sandbox).</strong> On newer Android versions, the advertising SDKs in our games may use Google&rsquo;s <strong>Topics API</strong>. This lets an advertising network read coarse interest categories that Android itself derives from your app usage &mdash; for example &ldquo;Puzzle Games&rdquo;. We never see or store these categories ourselves; they are read by, and shared with, the advertising networks named above.</p>
 <p>Ad personalization depends on your consent choice. Where required by law (e.g., in the EEA), a consent form is shown before personalized ads are served. You can change your ad preferences at any time through the privacy settings within the applicable game or app.</p>
 <p>For more information, see <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google Privacy Policy</a> and <a href="https://support.google.com/admob/answer/6128543" target="_blank" rel="noopener">AdMob & Privacy</a>.</p>
 
@@ -158,7 +162,11 @@
 <p>Some of our games offer optional in-app purchases processed through the platform's billing system (e.g., <strong>Google Play Billing</strong>, Apple App Store). We do not directly collect or store your payment information (credit card numbers, billing address, etc.). All payment processing is handled by the platform provider.</p>
 <p>Our games may locally record purchase status (product identifier, granted item amount, and transaction state) to ensure items are delivered correctly. No purchase receipts, tokens, or order IDs are transmitted to our servers.</p>
 
-<h3>1.4 Consent Data</h3>
+<h3>1.4 Crash and Performance Data</h3>
+<p>Our games may use <strong>Firebase Crashlytics</strong> to record technical information when the app crashes or behaves abnormally. This includes the crash stack trace, device model, operating system version, app version, and basic performance diagnostics.</p>
+<p>This is used only to find and fix bugs. It is not shared with advertisers and is not used to build a profile of you.</p>
+
+<h3>1.5 Consent Data</h3>
 <p>Our games may use the <strong>Google User Messaging Platform (UMP)</strong> to collect and manage your ad consent preferences where required by applicable law (e.g., GDPR). Your consent status is stored locally on your device.</p>
 
 <h2>2. Summary of Data Collection</h2>
@@ -181,8 +189,18 @@
     </tr>
     <tr>
         <td>Advertising ID</td>
-        <td>AdMob</td>
-        <td>Ad personalization, frequency capping</td>
+        <td>AdMob / ironSource LevelPlay</td>
+        <td>Ad personalization, frequency capping (shared with ad networks)</td>
+    </tr>
+    <tr>
+        <td>Interest categories (Topics API)</td>
+        <td>Ad SDKs</td>
+        <td>Ad relevance (shared with ad networks)</td>
+    </tr>
+    <tr>
+        <td>Crash logs &amp; diagnostics</td>
+        <td>Firebase Crashlytics</td>
+        <td>Stability and bug fixing (not shared with advertisers)</td>
     </tr>
     <tr>
         <td>IP address (approximate location)</td>
@@ -217,7 +235,8 @@
 </ul>
 
 <h2>4. Data Sharing</h2>
-<p>We do not sell your personal data. Information collected by third-party SDKs (Firebase Analytics, AdMob) is processed by Google under its own privacy policy. We do not currently operate our own backend servers, and we do not transmit any user data to our own servers.</p>
+<p>We do not sell your personal data. Information collected by third-party SDKs (Firebase Analytics, Firebase Crashlytics, AdMob, ironSource LevelPlay) is processed by those providers under their own privacy policies. We do not currently operate our own backend servers, and we do not transmit any user data to our own servers.</p>
+<p><strong>Your advertising ID and coarse device signals are shared with advertising networks</strong> so they can select, cap, and measure ads. Depending on the game this includes Google AdMob, ironSource LevelPlay, and LevelPlay&rsquo;s mediated partner networks such as Unity Ads. Analytics and crash data are <strong>not</strong> shared with advertisers.</p>
 
 <h2>5. Data Retention</h2>
 <p>Analytics data collected by Firebase is retained according to <a href="https://firebase.google.com/support/privacy#data_retention" target="_blank" rel="noopener">Google's data retention policies</a>. Local data stored on your device (game progress, purchase records, consent preferences) remains until you uninstall the applicable game or app, or clear its data.</p>
@@ -271,7 +290,7 @@
 <div id="ko">
 
 <h1>개인정보처리방침</h1>
-<p class="subtitle">시행일: 2026년 5월 23일 &nbsp;|&nbsp; 최종 수정일: 2026년 5월 23일</p>
+<p class="subtitle">시행일: 2026년 5월 23일 &nbsp;|&nbsp; 최종 수정일: 2026년 9월 1일</p>
 
 <p>SilentGames("회사" 또는 "당사")는 모바일 게임, 애플리케이션, 웹사이트 및 관련 서비스(이하 통칭 "서비스")를 개발·배포합니다. 본 개인정보처리방침은 당사 서비스가 수집할 수 있는 정보, 그 이용 방법, 그리고 이용자가 가지는 선택권을 설명합니다.</p>
 
@@ -294,13 +313,17 @@
 <p>자세한 내용은 <a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener">Firebase Privacy</a>를 참고하세요.</p>
 
 <h3>1.2 광고 데이터</h3>
-<p>당사 게임은 광고(보상형 광고 및 전면 광고) 표시를 위해 <strong>Google AdMob</strong>을 사용할 수 있습니다. AdMob 및 그 파트너는 다음을 수집할 수 있습니다.</p>
+<p><strong>광고 형식은 게임마다 다릅니다.</strong> 일부 게임은 이용자가 직접 선택해 시청하는 <strong>보상형 광고만</strong> 표시하며 전면 광고나 배너 광고를 표시하지 않습니다. 다른 게임은 전면 광고를 함께 표시할 수 있습니다. 각 게임이 어떤 형식을 사용하는지는 해당 게임의 스토어 등록정보에 명시되어 있습니다.</p>
+<p>광고 제공에는 미디에이션을 사용합니다. 하나의 SDK가 여러 광고 네트워크에 광고를 요청하고 제공 가능한 광고를 표시하는 방식입니다. 게임에 따라 미디에이션 SDK는 <strong>Google AdMob</strong> 또는 <strong>ironSource LevelPlay</strong>(Unity LevelPlay)입니다. LevelPlay를 사용하는 경우 Google AdMob, Unity Ads 등 파트너 네트워크에 광고를 요청할 수 있습니다.</p>
+<p>이들 광고 네트워크는 다음을 수집하며, 당사는 다음을 이들에게 <strong>공유합니다</strong>.</p>
 <ul>
     <li>광고 ID(Android의 Google 광고 ID)</li>
     <li>IP 주소(도시 또는 그보다 넓은 단위의 대략적 위치 추정에 사용)</li>
     <li>기기 정보(모델, OS 버전, 화면 크기)</li>
     <li>광고 상호작용 데이터(노출, 클릭)</li>
+    <li>연결 방식, 국가 등 대략적인 네트워크·기기 신호</li>
 </ul>
+<p><strong>관심사 신호(Privacy Sandbox).</strong> 최신 Android 버전에서는 당사 게임의 광고 SDK가 Google의 <strong>Topics API</strong>를 사용할 수 있습니다. 이를 통해 광고 네트워크는 Android가 이용자의 앱 사용에서 도출한 대략적인 관심사 범주(예: &ldquo;퍼즐 게임&rdquo;)를 읽을 수 있습니다. 당사는 이 범주를 보거나 저장하지 않으며, 위에 명시된 광고 네트워크가 읽고 공유받습니다.</p>
 <p>광고 개인화는 이용자의 동의 선택에 따릅니다. 법이 요구하는 경우(예: EEA) 개인화 광고 제공 전에 동의 양식이 표시됩니다. 해당 게임·앱 내 개인정보 설정에서 언제든 광고 환경설정을 변경할 수 있습니다.</p>
 <p>자세한 내용은 <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google 개인정보처리방침</a> 및 <a href="https://support.google.com/admob/answer/6128543" target="_blank" rel="noopener">AdMob & Privacy</a>를 참고하세요.</p>
 
@@ -308,7 +331,11 @@
 <p>일부 게임은 플랫폼 결제 시스템(예: <strong>Google Play 결제</strong>, Apple App Store)을 통한 선택적 인앱 구매를 제공합니다. 당사는 결제 정보(카드 번호, 청구 주소 등)를 직접 수집하거나 저장하지 않습니다. 모든 결제 처리는 플랫폼 제공자가 수행합니다.</p>
 <p>당사 게임은 아이템이 올바르게 지급되도록 구매 상태(상품 식별자, 지급 아이템 수량, 거래 상태)를 기기에 로컬로 기록할 수 있습니다. 구매 영수증, 토큰, 주문 ID는 당사 서버로 전송되지 않습니다.</p>
 
-<h3>1.4 동의 데이터</h3>
+<h3>1.4 비정상 종료 및 성능 데이터</h3>
+<p>당사 게임은 앱이 비정상 종료되거나 오작동할 때 기술 정보를 기록하기 위해 <strong>Firebase Crashlytics</strong>를 사용할 수 있습니다. 여기에는 오류 스택 트레이스, 기기 모델, 운영체제 버전, 앱 버전, 기본 성능 진단 정보가 포함됩니다.</p>
+<p>이 정보는 오직 결함을 찾아 고치는 데에만 사용합니다. 광고주에게 공유하지 않으며 이용자 프로필 구성에 사용하지 않습니다.</p>
+
+<h3>1.5 동의 데이터</h3>
 <p>당사 게임은 관련 법(예: GDPR)이 요구하는 경우 <strong>Google User Messaging Platform(UMP)</strong>을 사용해 광고 동의 환경설정을 수집·관리할 수 있습니다. 동의 상태는 기기에 로컬로 저장됩니다.</p>
 
 <h2>2. 데이터 수집 요약</h2>
@@ -330,9 +357,19 @@
         <td>분석, 광고 제공</td>
     </tr>
     <tr>
+        <td>관심사 범주(Topics API)</td>
+        <td>광고 SDK</td>
+        <td>광고 관련성(광고 네트워크에 공유)</td>
+    </tr>
+    <tr>
+        <td>비정상 종료 로그 및 진단</td>
+        <td>Firebase Crashlytics</td>
+        <td>안정성 및 결함 수정(광고주에 공유하지 않음)</td>
+    </tr>
+    <tr>
         <td>광고 ID</td>
-        <td>AdMob</td>
-        <td>광고 개인화, 노출 빈도 제한</td>
+        <td>AdMob / ironSource LevelPlay</td>
+        <td>광고 개인화, 노출 빈도 제한(광고 네트워크에 공유)</td>
     </tr>
     <tr>
         <td>IP 주소(대략적 위치)</td>
@@ -367,7 +404,8 @@
 </ul>
 
 <h2>4. 데이터 공유</h2>
-<p>당사는 이용자의 개인정보를 판매하지 않습니다. 제3자 SDK(Firebase Analytics, AdMob)가 수집한 정보는 Google이 자체 개인정보처리방침에 따라 처리합니다. 당사는 현재 자체 백엔드 서버를 운영하지 않으며, 어떤 이용자 데이터도 당사 서버로 전송하지 않습니다.</p>
+<p>당사는 이용자의 개인정보를 판매하지 않습니다. 제3자 SDK(Firebase Analytics, Firebase Crashlytics, AdMob, ironSource LevelPlay)가 수집한 정보는 각 제공자의 자체 개인정보처리방침에 따라 처리합니다. 당사는 현재 자체 백엔드 서버를 운영하지 않으며, 어떤 이용자 데이터도 당사 서버로 전송하지 않습니다.</p>
+<p><strong>이용자의 광고 ID와 대략적인 기기 신호는 광고 네트워크에 공유됩니다.</strong> 광고 선택·빈도 제한·성과 측정을 위해서입니다. 게임에 따라 Google AdMob, ironSource LevelPlay, 그리고 LevelPlay가 미디에이션하는 Unity Ads 등 파트너 네트워크가 포함됩니다. 분석 및 비정상 종료 데이터는 광고주에게 <strong>공유하지 않습니다</strong>.</p>
 
 <h2>5. 데이터 보유</h2>
 <p>Firebase가 수집한 분석 데이터는 <a href="https://firebase.google.com/support/privacy#data_retention" target="_blank" rel="noopener">Google의 데이터 보유 정책</a>에 따라 보관됩니다. 기기에 저장된 로컬 데이터(게임 진행 상황, 구매 기록, 동의 환경설정)는 해당 게임·앱을 삭제하거나 데이터를 지우기 전까지 유지됩니다.</p>
