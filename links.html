@@ -244,7 +244,7 @@
     // 게임 안 'More Games' 는 게임마다 자기 소스를 쓴다 — 안 그러면 인게임 유입이
     // 전부 bio/profile 로 떨어져 어느 게임이 보냈는지 못 가린다. 규칙: <게임약자> → [게임명,'moregames']
     var map = {ig:['instagram','reels'], tt:['tiktok','shorts'], yt:['youtube','shorts'], bio:['bio','profile'],
-               pf:['prismfall','moregames']};
+               pf:['prismfall','moregames'], pm:['polygonmerge','moregames']};
     var m = map[(p.get('s')||'bio').toLowerCase()] || map.bio;
     // attach a per-game UTM to every live Play button (campaign = organic_<game>)
     document.querySelectorAll('a.btn-play[data-pkg]').forEach(function(btn){
