@@ -121,7 +121,7 @@
 <div id="en">
 
 <h1>Privacy Policy</h1>
-<p class="subtitle">Effective Date: May 23, 2026 &nbsp;|&nbsp; Last Updated: September 1, 2026</p>
+<p class="subtitle">Effective Date: May 23, 2026 &nbsp;|&nbsp; Last Updated: October 5, 2026</p>
 
 <p>SilentGames ("we", "us", or "our") develops and publishes mobile games, applications, websites, and related services (collectively, the "Services"). This Privacy Policy explains what information our Services may collect, how it is used, and what choices you have.</p>
 
@@ -129,7 +129,7 @@
 
 <h2>1. Information We Collect</h2>
 
-<p>Our Services do not require you to create an account or provide personal information such as your name, email address, or phone number. However, our games and apps use third-party services that may automatically collect certain data as described below.</p>
+<p>Our Services do not ask you to sign up or to provide personal information such as your name, email address, or phone number. Some games keep a cloud save linked to your Google Play Games account (see 1.6). Our games and apps also use third-party services that may automatically collect certain data as described below.</p>
 
 <h3>1.1 Analytics Data</h3>
 <p>Our games may use <strong>Google Firebase Analytics</strong> to understand how players interact with them. Firebase Analytics automatically collects:</p>
@@ -168,6 +168,11 @@
 
 <h3>1.5 Consent Data</h3>
 <p>Our games may use the <strong>Google User Messaging Platform (UMP)</strong> to collect and manage your ad consent preferences where required by applicable law (e.g., GDPR). Your consent status is stored locally on your device.</p>
+
+<h3>1.6 Cloud Save</h3>
+<p>Some of our games, starting with <strong>Vector Siege</strong>, keep your progress in the cloud so that it survives reinstalling the game or changing devices. When the game starts, it signs you in automatically with <strong>Google Play Games Services</strong>, and <strong>Firebase Authentication</strong> creates an account record linked to your Play Games account. That record holds a user ID and may include your Play Games player name and avatar. Your game save (progress, items, in-game currency balances, and in-game settings) is stored in <strong>Google Cloud Firestore</strong> (United States) under that user ID.</p>
+<p>We do not receive your email address or your Google account password. Cloud save data is used only to restore your progress and is not shared with advertisers.</p>
+<p>You can delete your cloud save and its account record at any time in the game (<em>Settings &gt; DELETE MY DATA</em>), or by following the <a href="vectorsiege-data-deletion.html">Vector Siege data deletion page</a>.</p>
 
 <h2>2. Summary of Data Collection</h2>
 
@@ -218,6 +223,11 @@
         <td>Item delivery and recovery</td>
     </tr>
     <tr>
+        <td>User ID &amp; game save (cloud save)</td>
+        <td>Firebase Authentication, Cloud Firestore, Google Play Games Services</td>
+        <td>Saving and restoring progress (not shared with advertisers)</td>
+    </tr>
+    <tr>
         <td>Consent choice</td>
         <td>UMP SDK (local only)</td>
         <td>Legal compliance</td>
@@ -235,11 +245,11 @@
 </ul>
 
 <h2>4. Data Sharing</h2>
-<p>We do not sell your personal data. Information collected by third-party SDKs (Firebase Analytics, Firebase Crashlytics, AdMob, ironSource LevelPlay) is processed by those providers under their own privacy policies. We do not currently operate our own backend servers, and we do not transmit any user data to our own servers.</p>
+<p>We do not sell your personal data. Information collected by third-party SDKs (Firebase Analytics, Firebase Crashlytics, AdMob, ironSource LevelPlay) is processed by those providers under their own privacy policies. We do not operate our own backend servers. The only data our games store in the cloud on our behalf is the optional cloud save described in 1.6, which is kept in Google Firebase.</p>
 <p><strong>Your advertising ID and coarse device signals are shared with advertising networks</strong> so they can select, cap, and measure ads. Depending on the game this includes Google AdMob, ironSource LevelPlay, and LevelPlay&rsquo;s mediated partner networks such as Unity Ads. Analytics and crash data are <strong>not</strong> shared with advertisers.</p>
 
 <h2>5. Data Retention</h2>
-<p>Analytics data collected by Firebase is retained according to <a href="https://firebase.google.com/support/privacy#data_retention" target="_blank" rel="noopener">Google's data retention policies</a>. Local data stored on your device (game progress, purchase records, consent preferences) remains until you uninstall the applicable game or app, or clear its data.</p>
+<p>Analytics data collected by Firebase is retained according to <a href="https://firebase.google.com/support/privacy#data_retention" target="_blank" rel="noopener">Google's data retention policies</a>. Local data stored on your device (game progress, purchase records, consent preferences) remains until you uninstall the applicable game or app, or clear its data. Cloud save data and its account record (1.6) are kept until you delete them, and are erased immediately when you use the in-game deletion or within 30 days of an emailed request.</p>
 
 <h2>6. Your Choices and Rights</h2>
 
@@ -260,6 +270,9 @@
 
 <h3>6.5 Rights Under CCPA / California</h3>
 <p>California residents have the right to know what personal information is collected, to request deletion, and to opt out of the sale of personal information. We do not sell personal information. To make a request, please contact us at the address below.</p>
+
+<h3>6.6 Deleting Your Data</h3>
+<p>For games with a cloud save, you can delete your progress and account record in the game or by request. See the <a href="vectorsiege-data-deletion.html">Vector Siege data deletion page</a> for the steps and for what is deleted and kept.</p>
 
 <h2>7. Children's Privacy</h2>
 <p>Our Services are not directed at children under the age of 13 (or the applicable age in your jurisdiction). We do not knowingly collect personal information from children. Unless otherwise stated for a specific title, our games do not apply child-directed ad treatment by default.</p>
@@ -290,7 +303,7 @@
 <div id="ko">
 
 <h1>개인정보처리방침</h1>
-<p class="subtitle">시행일: 2026년 5월 23일 &nbsp;|&nbsp; 최종 수정일: 2026년 9월 1일</p>
+<p class="subtitle">시행일: 2026년 5월 23일 &nbsp;|&nbsp; 최종 수정일: 2026년 10월 5일</p>
 
 <p>SilentGames("회사" 또는 "당사")는 모바일 게임, 애플리케이션, 웹사이트 및 관련 서비스(이하 통칭 "서비스")를 개발·배포합니다. 본 개인정보처리방침은 당사 서비스가 수집할 수 있는 정보, 그 이용 방법, 그리고 이용자가 가지는 선택권을 설명합니다.</p>
 
@@ -298,7 +311,7 @@
 
 <h2>1. 수집하는 정보</h2>
 
-<p>당사 서비스는 계정 생성이나 이름, 이메일 주소, 전화번호 등 개인정보 제공을 요구하지 않습니다. 다만 당사 게임 및 앱은 아래와 같이 특정 데이터를 자동으로 수집할 수 있는 제3자 서비스를 사용합니다.</p>
+<p>당사 서비스는 회원 가입이나 이름, 이메일 주소, 전화번호 등 개인정보 제공을 요구하지 않습니다. 일부 게임은 Google Play 게임즈 계정에 연결된 클라우드 세이브를 사용합니다(1.6 참고). 또한 당사 게임 및 앱은 아래와 같이 특정 데이터를 자동으로 수집할 수 있는 제3자 서비스를 사용합니다.</p>
 
 <h3>1.1 분석 데이터</h3>
 <p>당사 게임은 플레이어의 이용 방식을 파악하기 위해 <strong>Google Firebase Analytics</strong>를 사용할 수 있습니다. Firebase Analytics는 다음을 자동으로 수집합니다.</p>
@@ -337,6 +350,11 @@
 
 <h3>1.5 동의 데이터</h3>
 <p>당사 게임은 관련 법(예: GDPR)이 요구하는 경우 <strong>Google User Messaging Platform(UMP)</strong>을 사용해 광고 동의 환경설정을 수집·관리할 수 있습니다. 동의 상태는 기기에 로컬로 저장됩니다.</p>
+
+<h3>1.6 클라우드 세이브</h3>
+<p><strong>Vector Siege</strong>를 비롯한 일부 게임은 게임을 다시 설치하거나 기기를 바꿔도 진행이 이어지도록 진행 상황을 클라우드에 보관합니다. 게임을 시작하면 <strong>Google Play 게임즈 서비스</strong>로 자동 로그인하며, <strong>Firebase Authentication</strong>이 Play 게임즈 계정에 연결된 계정 기록을 만듭니다. 이 기록에는 사용자 ID가 있으며 Play 게임즈 플레이어 이름과 아바타가 포함될 수 있습니다. 게임 세이브(진행, 아이템, 게임 내 재화 잔액, 게임 설정)는 그 사용자 ID로 <strong>Google Cloud Firestore</strong>(미국)에 저장됩니다.</p>
+<p>당사는 이메일 주소나 Google 계정 비밀번호를 받지 않습니다. 클라우드 세이브 데이터는 진행 복원에만 사용하며 광고주에게 공유하지 않습니다.</p>
+<p>클라우드 세이브와 그 계정 기록은 게임 안에서(<em>Settings &gt; DELETE MY DATA</em>) 또는 <a href="vectorsiege-data-deletion.html">Vector Siege 데이터 삭제 안내</a>에 따라 언제든 삭제할 수 있습니다.</p>
 
 <h2>2. 데이터 수집 요약</h2>
 
@@ -387,6 +405,11 @@
         <td>아이템 지급 및 복구</td>
     </tr>
     <tr>
+        <td>사용자 ID 및 게임 세이브(클라우드 세이브)</td>
+        <td>Firebase Authentication, Cloud Firestore, Google Play 게임즈 서비스</td>
+        <td>진행 저장 및 복원(광고주에 공유하지 않음)</td>
+    </tr>
+    <tr>
         <td>동의 선택</td>
         <td>UMP SDK(로컬 전용)</td>
         <td>법적 준수</td>
@@ -404,11 +427,11 @@
 </ul>
 
 <h2>4. 데이터 공유</h2>
-<p>당사는 이용자의 개인정보를 판매하지 않습니다. 제3자 SDK(Firebase Analytics, Firebase Crashlytics, AdMob, ironSource LevelPlay)가 수집한 정보는 각 제공자의 자체 개인정보처리방침에 따라 처리합니다. 당사는 현재 자체 백엔드 서버를 운영하지 않으며, 어떤 이용자 데이터도 당사 서버로 전송하지 않습니다.</p>
+<p>당사는 이용자의 개인정보를 판매하지 않습니다. 제3자 SDK(Firebase Analytics, Firebase Crashlytics, AdMob, ironSource LevelPlay)가 수집한 정보는 각 제공자의 자체 개인정보처리방침에 따라 처리합니다. 당사는 자체 백엔드 서버를 운영하지 않습니다. 당사를 위해 클라우드에 저장되는 데이터는 1.6의 클라우드 세이브뿐이며 Google Firebase에 보관됩니다.</p>
 <p><strong>이용자의 광고 ID와 대략적인 기기 신호는 광고 네트워크에 공유됩니다.</strong> 광고 선택·빈도 제한·성과 측정을 위해서입니다. 게임에 따라 Google AdMob, ironSource LevelPlay, 그리고 LevelPlay가 미디에이션하는 Unity Ads 등 파트너 네트워크가 포함됩니다. 분석 및 비정상 종료 데이터는 광고주에게 <strong>공유하지 않습니다</strong>.</p>
 
 <h2>5. 데이터 보유</h2>
-<p>Firebase가 수집한 분석 데이터는 <a href="https://firebase.google.com/support/privacy#data_retention" target="_blank" rel="noopener">Google의 데이터 보유 정책</a>에 따라 보관됩니다. 기기에 저장된 로컬 데이터(게임 진행 상황, 구매 기록, 동의 환경설정)는 해당 게임·앱을 삭제하거나 데이터를 지우기 전까지 유지됩니다.</p>
+<p>Firebase가 수집한 분석 데이터는 <a href="https://firebase.google.com/support/privacy#data_retention" target="_blank" rel="noopener">Google의 데이터 보유 정책</a>에 따라 보관됩니다. 기기에 저장된 로컬 데이터(게임 진행 상황, 구매 기록, 동의 환경설정)는 해당 게임·앱을 삭제하거나 데이터를 지우기 전까지 유지됩니다. 클라우드 세이브와 그 계정 기록(1.6)은 이용자가 삭제할 때까지 보관되며, 게임 안에서 삭제하면 즉시, 메일로 요청하면 30일 이내에 지워집니다.</p>
 
 <h2>6. 이용자의 선택과 권리</h2>
 
@@ -429,6 +452,9 @@
 
 <h3>6.5 CCPA / 캘리포니아 권리</h3>
 <p>캘리포니아 주민은 수집되는 개인정보 확인, 삭제 요청, 개인정보 판매 거부 권리를 가집니다. 당사는 개인정보를 판매하지 않습니다. 요청을 원하시면 아래 연락처로 문의해 주세요.</p>
+
+<h3>6.6 데이터 삭제</h3>
+<p>클라우드 세이브가 있는 게임은 게임 안에서 또는 요청으로 진행과 계정 기록을 삭제할 수 있습니다. 절차와 삭제·보관되는 데이터는 <a href="vectorsiege-data-deletion.html">Vector Siege 데이터 삭제 안내</a>를 참고하세요.</p>
 
 <h2>7. 아동의 개인정보</h2>
 <p>당사 서비스는 만 13세 미만(또는 거주 지역의 해당 연령) 아동을 대상으로 하지 않습니다. 당사는 아동의 개인정보를 고의로 수집하지 않습니다. 특정 타이틀에 별도 명시가 없는 한, 당사 게임은 기본적으로 아동 대상 광고 처리를 적용하지 않습니다.</p>
