@@ -9,7 +9,7 @@
 <meta property="og:description" content="Easy to pick up, hard to put down. Find all our games in one place.">
 <!-- 링크 미리보기 썸네일 = 맨 위(가장 최근) 게임의 아이콘. 새 게임 카드를 맨 위에 넣을 때 같이 바꾼다.
      미리보기 수집기는 상대 경로를 못 읽는 곳이 있어 절대 주소로 둔다. -->
-<meta property="og:image" content="https://trauma44.github.io/silentgames-policy/icon_vectorsiege.png">
+<meta property="og:image" content="https://trauma44.github.io/silentgames-policy/icon_prismwarrior.png">
 <style>
   :root{
     --green:#15803A; --gold:#EAB750; --ink:#1A1A1A;
@@ -74,6 +74,9 @@
   }
   .card-ic{box-shadow:0 4px 14px color-mix(in srgb,var(--accent,#142) 38%,transparent)}
   .card.focus{border-color:color-mix(in srgb,var(--accent,#142) 45%,var(--line))}
+  /* Prism Warrior 는 아이콘이 일곱 빛 부채라 윗줄도 일곱 색(아이콘 실측). 그림자 · 테두리는
+     color-mix 가 그라데이션을 못 받아 --accent(가운데 초록 띠) 한 색으로 둔다. */
+  .card[data-game="prismwarrior"]::before{background:linear-gradient(90deg,#F8313C,#FA7325,#FAE633,#34F04F,#32E0F8,#2551F8,#A830F7)}
 
   /* 카드가 차례로 떠오른다. **움직임을 줄여 달라고 한 기기에서는 안 움직인다.** */
   /* ⚠ `nth-of-type` 으로 세면 안 된다 — 그건 **형제 중 같은 태그**를 세므로
@@ -129,8 +132,27 @@
     <p class="studio-tag" data-en>Simple. Satisfying. Easy-to-pick-up mobile games 🎮</p>
     <p class="studio-tag" data-ko>간단하고 만족스러운, 누구나 바로 즐기는 모바일 게임 🎮</p>
 
+    <!-- ===== Prism Warrior ===== -->
+    <div class="card" data-game="prismwarrior" style="--accent:#34F04F;--i:0">
+      <div class="card-head">
+        <img class="card-ic" src="icon_prismwarrior.png" alt="Prism Warrior">
+        <div class="card-meta">
+          <div class="card-name">Prism Warrior</div>
+          <div class="card-tag" data-en>Idle RPG — the world has lost its colors. Raise a tiny warrior who fights while you rest.</div>
+          <div class="card-tag" data-ko>방치형 RPG — 색을 잃은 세계, 쉬는 동안에도 싸우는 작은 프리즘 용사를 키운다.</div>
+          <span class="badge live" data-en>✅ Out now on Android</span>
+          <span class="badge live" data-ko>✅ 안드로이드 출시</span>
+        </div>
+      </div>
+      <a class="btn btn-play" data-game="prismwarrior" data-pkg="com.silentgames.prismwarrior"
+         target="_blank" rel="noopener"
+         href="https://play.google.com/store/apps/details?id=com.silentgames.prismwarrior">
+        <span data-en>▶ Get it on Google Play</span><span data-ko>▶ Google Play에서 받기</span>
+      </a>
+    </div>
+
     <!-- ===== Vector Siege ===== -->
-    <div class="card" data-game="vectorsiege" style="--accent:#FCC81E;--i:0">
+    <div class="card" data-game="vectorsiege" style="--accent:#FCC81E;--i:1">
       <div class="card-head">
         <img class="card-ic" src="icon_vectorsiege.png" alt="Vector Siege">
         <div class="card-meta">
@@ -149,7 +171,7 @@
     </div>
 
     <!-- ===== Prism Fall ===== -->
-    <div class="card" data-game="prismfall" style="--accent:#22D3EE;--i:1">
+    <div class="card" data-game="prismfall" style="--accent:#22D3EE;--i:2">
       <div class="card-head">
         <img class="card-ic" src="icon_prismfall.png" alt="Prism Fall">
         <div class="card-meta">
@@ -168,7 +190,7 @@
     </div>
 
     <!-- ===== Polygon Merge ===== -->
-    <div class="card" data-game="polygonmerge" style="--accent:#9743FB;--i:2">
+    <div class="card" data-game="polygonmerge" style="--accent:#9743FB;--i:3">
       <div class="card-head">
         <img class="card-ic" src="icon_polygonmerge.png" alt="Polygon Merge">
         <div class="card-meta">
@@ -187,7 +209,7 @@
     </div>
 
     <!-- ===== JellyChase ===== -->
-    <div class="card" data-game="jellychase" style="--accent:#FD9591;--i:3">
+    <div class="card" data-game="jellychase" style="--accent:#FD9591;--i:4">
       <div class="card-head">
         <img class="card-ic" src="icon_jellychase.png" alt="JellyChase">
         <div class="card-meta">
@@ -206,7 +228,7 @@
     </div>
 
     <!-- ===== Block Bloom ===== -->
-    <div class="card" data-game="blockbloom" style="--accent:#F9A825;--i:4">
+    <div class="card" data-game="blockbloom" style="--accent:#F9A825;--i:5">
       <div class="card-head">
         <img class="card-ic" src="icon_blockbloom.png" alt="Block Bloom">
         <div class="card-meta">
@@ -225,7 +247,7 @@
     </div>
 
     <!-- ===== Outarrow ===== -->
-    <div class="card" data-game="outarrow" style="--accent:#15803A;--i:5">
+    <div class="card" data-game="outarrow" style="--accent:#15803A;--i:6">
       <div class="card-head">
         <img class="card-ic" src="icon_outarrow.png" alt="Outarrow">
         <div class="card-meta">
